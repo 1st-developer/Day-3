@@ -1,0 +1,1006 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #222222;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+@media (max-width: 1200px) {
+    .home .main .all {
+        display: grid;
+    }
+    .home header nav .logo {
+        gap: 20px;
+    }
+    .home header {
+        padding: 10px 20px;
+    }
+    .home .loop .control {
+        margin-top: 10rem;
+    }
+    .home .loop .control .flex-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home .next .down .koko {
+        display: grid;
+    }
+    .home .anime .mustafa .cabdi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home .anime  {
+        margin-top: 20rem;
+    }
+    .home .baki {
+        margin-top: 50rem;
+    }
+    .home .control .you {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home .yujiro .women {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50rem;
+    }
+    .home .hanma {
+        margin-top: 40rem;
+    }
+    .home .hanma .father {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .home .next .down .mox .koko {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home .anime .mustafa .cabdi {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home .anime  {
+        margin-top: 50rem;
+    }
+    .home header nav .logo a {
+        opacity: 0;
+    }
+    .home .baki {
+        margin-top: 90rem;
+    }
+    .home .hanma .father {
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .home .footer {
+        margin-top: 20rem;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header nav .logo img {
+    width: 20%;
+}
+
+header nav .logo a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav .logo a:hover {
+    color: #fff;
+}
+
+header .btn button {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    background: #32c8c5;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+header .btn button:hover {
+    background: #46dedc;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: #222222;
+}
+
+.main {
+    width: 100%;
+    color: #fff;
+}
+
+.main .all {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 10rem;
+    background: transparent;
+}
+
+.main .all .text {
+    display: grid;
+    gap: 20px;
+    margin-top: 10rem;
+}
+
+.main .all .text .frame {
+    display: flex;
+    gap: 10px;
+}
+
+
+.main .all .text .frame .login button {
+    width: 150px;
+    height: 100%;
+    border-radius: 5px;
+    background: #32c8c5;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main .all .text .frame .login button:hover {
+    background: #46dedc;
+}
+
+.main .all .text .frame .input-box {
+    width: 45%;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #5b5b5b;
+}
+
+.main .all .text .frame .input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background: #383838;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.main .all .text .frame .input-box input::placeholder {
+    color: lightgray;
+    font-weight: 500;
+}
+
+.main .all .text h1{
+    line-height: 5rem;
+}
+
+.main .all .text p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: rgb(155, 155, 155);
+}
+
+.main .all .text h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.main .all .image {
+    width: 30%;
+    height: 80vh;
+    position: relative;
+    top: 8rem;
+    z-index: 1;
+}
+
+.main .all .image .iphone-frame {
+    width: 300px;
+    height: 600px;
+    background-image: url('../img/iphone-mockup.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.main .all .image .screen-frame {
+    width: 85%;
+    height: 93%;
+    background-image: url('../img/mockup-image-01.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.main .all .image .screen-frame .play-button {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main .all .image .screen-frame .play-button button {
+    background-image: url('../img/play-button.svg');
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 9999px;
+    width: 100px;
+    height: 100px;
+}
+
+.main .all .image .loud {
+    background: #32c8c5;
+    width: 100%;
+    height: 100%;
+}
+
+.main .all .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.loop {
+    width: 100%;
+    height: 60vh;
+    background: #222222;
+    border-bottom: 1px solid #373737;
+}
+
+.loop .control {
+    width: 75%;
+    margin: auto;
+    background: transparent;
+}
+
+.loop .control .must {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin-top: 15px;
+    display: flex;
+    line-height: 30px;
+}
+
+.loop .control .must .navigation {
+    color: rgb(155, 155, 155)
+}
+
+.loop .check-mark {
+    display: flex;
+    gap: 10px;
+    background: transparent;
+}
+
+.loop .check-mark .tick-image {
+    width: 1.5%;
+    background: transparent;
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.loop .check-mark .tick-image img {
+    width: 100%;
+}
+
+.loop .control .flex-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 5rem;
+}
+
+.loop .control .flex-box .box {
+    width: 100%;
+    height: 20vh;
+    background: rgb(59, 59, 59);
+}
+
+.loop .control .flex-box .box .qoraal {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loop .control .flex-box .box .qoraal h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.loop .control .flex-box .box .qoraal p {
+    color: #a1a0a0;
+    margin-top: -50px;
+}
+
+.second {
+    width: 100%;
+    height: 140vh;
+    background: #222222;
+    border-bottom: 1px solid #343434;
+}
+
+.second .introduction {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+}
+
+.second .introduction h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin-top: 5rem;
+}
+
+.second .introduction p {
+    text-align: center;
+    color: #a1a0a0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.second .three {
+    width: 100%;
+}
+
+.second .three .some {
+    display: flex;
+    gap: 40px;
+    margin-top: 5rem;
+}
+
+.second .three .some .lex {
+    width: 500px;
+    height: 500px;
+    background: url('../img/carousel-item-01.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.second .three .some .lex1 {
+    width: 500px;
+    height: 500px;
+    background: url('../img/carousel-item-02.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.second .three .some .lex2 {
+    width: 500px;
+    height: 500px;
+    background: url('../img/carousel-item-03.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.second .three .some .lex .fox, .second .three .some .lex1 .fox, .second .three .some .lex2 .fox {
+    display: flex;
+    position: relative;
+    left: 8rem;
+    top: 13rem;
+}
+
+.second .three .some .lex .fox button, .second .three .some .lex1 .fox button, .second .three .some .lex2 .fox button {
+    width: 130px;
+    height: 30px;
+    background: #4c4c4c;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.second .three .some .lex .qoun button, .second .three .some .lex1 .qoun button, .second .three .some .lex2 .qoun button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background: #32c8c5;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+}
+
+.second .three .some .lex .qoun button:hover, .second .three .some .lex1 .qoun button:hover, .second .three .some .lex2 .qoun button:hover {
+    background: #46dedc;
+}
+
+.second .three .some .lex .fox button:hover, .second .three .some .lex1 .fox button:hover, .second .three .some .lex2 .fox button:hover {
+    background: #000;
+}
+
+.next {
+    width: 100%;
+    height: 160vh;
+    background: #252525;
+}
+
+.next .introduction {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+}
+
+.next .introduction h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin-top: 5rem;
+}
+
+.next .introduction p {
+    text-align: center;
+    color: #a1a0a0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.next .down {
+    width: 72%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 5rem;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.next .down .koko {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.next .down .koko .gap .jox {
+    display: grid;
+    gap: 10px;
+}
+
+.next .down .koko .gap .jox .five{
+    width: 300px;
+    height: 50px;
+    background: #363636;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next .down .koko .gap .jox .min {
+    background: #219677;
+}
+
+.next .down .koko .gap .jox .five:hover {
+    background: rgb(79, 79, 79);
+}
+
+.next .down .mox .koko {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.next .down .mox .rook {
+    width: 350px;
+    height: 35vh;
+    background: url('../img/video-thumb.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next .down .koko .gap .jox .five .h1 {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.next .down .koko .gap .jox .five .h1 h1 {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.next .down .koko .mox .rook .coun button {
+    background-image: url('../img/play-button.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 9999px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.next .down .koko .mox .rook .coun button:hover {
+    opacity: .5;
+}
+
+.anime {
+    width: 100%;
+    height: 150vh;
+    background: #252525;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.anime .introduction {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+}
+
+.anime .introduction h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin-top: 5rem;
+}
+
+.anime .introduction p {
+    text-align: center;
+    color: #a1a0a0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.anime .mustafa {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.anime .mustafa .cabdi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.anime .mustafa .image {
+    width: 30%;
+    height: 80vh;
+    z-index: 1;
+}
+
+.anime .mustafa  .image .iphone-frame {
+    width: 300px;
+    height: 600px;
+    background-image: url('../img/iphone-mockup.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.anime .mustafa  .screen-frame {
+    width: 90%;
+    height: 93%;
+    background-image: url('../img/mockup-image-02.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.anime .mustafa  .screen-frame1 {
+    width: 90%;
+    height: 93%;
+    background-image: url('../img/mockup-image-03.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.anime .mustafa  .screen-frame2 {
+    width: 90%;
+    height: 93%;
+    background-image: url('../img/mockup-image-04.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.baki {
+    width: 100%;
+    background: #252525;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.baki .introduction {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+}
+
+.baki .introduction h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin-top: 5rem;
+}
+
+.baki .introduction p {
+    text-align: center;
+    color: #a1a0a0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.baki .control {
+    width: 75%;
+    height: 60vh;
+    margin: auto;
+    border-bottom: 1px solid #434343;
+}
+
+.baki .control .must {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin-top: 15px;
+    display: flex;
+    line-height: 30px;
+}
+
+.baki .control .must .navigation {
+    color: rgb(155, 155, 155)
+}
+
+.baki .check-mark {
+    display: flex;
+    gap: 10px;
+    background: transparent;
+}
+
+.baki .check-mark .tick-image {
+    width: 1.5%;
+    background: transparent;
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.baki .check-mark .tick-image img {
+    width: 100%;
+}
+
+.control .you {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.control .gool {
+    margin-top: 5rem;
+}
+
+
+.control .you .hox {
+    width: 270px;
+    height: 350px;
+    background: #373737;
+    line-height: 2rem;
+}
+
+.control .you .feen {
+    border: 2px solid #32c8c5;
+}
+
+.control .you .hox h1{
+    color: #fff;
+    font-size: 1rem;
+    padding: 30px;
+}
+
+.control .you .hox span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.control .you .hox i{
+    color: lightgray;
+}
+
+.control .you .hox .btn-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control .you .hox .btn-btn button {
+    width: 220px;
+    height: 40px;
+    background: #29aeac;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.control .you .hox .btn-btn button:hover {
+    background: #32c8c5;
+}
+
+.control .you .hox .btn-btn1, .control .you .hox .btn-btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control .you .hox .btn-btn1 button, .control .you .hox .btn-btn2 button {
+    width: 220px;
+    height: 40px;
+    background: #454545;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #32c8c5;
+    margin-top: 95px;
+}
+
+.control .you .hox .btn-btn1 button:hover, .control .you .hox .btn-btn2 button:hover {
+    background: #545454;
+}
+
+.yujiro {
+    width: 100%;
+    height: 85vh;
+    background: #252525;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.yujiro .women {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.yujiro .women .face {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yujiro .women .face .in {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.yujiro .women .face .in .image {
+    transform: translateX(0);
+    width: 15%;
+    margin: auto;
+}
+
+.yujiro .women .face .in .image img {
+    border-radius: 9999px;
+    width: 100%;
+}
+
+.yujiro .women .face .in h2 {
+    font-size: 1.2rem;
+    color: #b6b6b6;
+    line-height: 2rem;
+}
+
+.yujiro .women .face .in .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yujiro .women .face .in .link a {
+    color: #29aeac;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.yujiro .women .face .in .link h2 {
+    color: #fff;
+}
+
+.hanma {
+    width: 100%;
+    height: 100vh;
+    background: #252525;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.hanma .introduction {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+}
+
+.hanma .introduction h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin-top: 5rem;
+}
+
+.hanma .father {
+    width: 80%;
+    height: 33vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.hanma .father .son {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hanma .father .son h1 {
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hanma .father .son p {
+    line-height: 1.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.hanma .father .one {
+    background: #29aeac;
+}
+
+.hanma .father .two {
+    background: #bb71ef;
+}
+
+.hanma .father .three {
+    background: #7577f4;
+}
+
+.hanma .father .four {
+    background: #ef6ac8;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background: #171717;
+}
+
+.footer .element {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .element .focus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.footer .element .focus .laws{
+    color: #fff;
+    display: grid;
+    gap: 10px;
+    width: 40%;
+    margin-top: 5rem;
+}
+
+.footer .element .focus .laws h1 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer .element .focus .laws a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.footer .element .focus .laws a:hover {
+    text-decoration: underline;
+}
+
+.footer .element .goul {
+    position: relative;
+    right: 60rem;
+    top: 5rem;
+}
